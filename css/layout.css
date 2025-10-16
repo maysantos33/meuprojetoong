@@ -1,0 +1,32 @@
+/* GRID GERAL */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--esp-16);
+  width: 90%;
+  margin: auto;
+}
+
+/* CABEÇALHO */
+header {
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: var(--esp-16);
+}
+
+/* SEÇÃO DE PROJETOS (EXEMPLO) */
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--esp-24);
+  margin-top: var(--esp-32);
+}
+@media (max-width: 1200px) { /* telas grandes */}
+@media (max-width: 992px)  { /* notebooks */}
+@media (max-width: 768px)  { /* tablets */}
+@media (max-width: 576px)  { /* celulares */}
+@media (max-width: 400px)  { /* celulares menores */}

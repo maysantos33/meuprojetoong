@@ -3,52 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ONG Esperança | Transformando vidas</title>
+  <title>ONG Esperança</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <img src="../imagens/logo.png" alt="Logo da ONG Esperança" class="logo">
-      <ul class="menu">
-        <li><a href="index.html" class="ativo">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
+  <!-- ====== Cabeçalho ====== -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">ONG Esperança</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <img src="../imagens/banner.jpg" alt="Banner da ONG mostrando voluntários ajudando pessoas" class="banner">
-      <div class="hero-text">
-        <h1>ONG Esperança</h1>
-        <p>Transformando vidas através da solidariedade, educação e inclusão social.</p>
-        <a href="cadastro.html" class="btn-cta">Seja um voluntário</a>
+  <!-- ====== Banner ====== -->
+  <section class="banner">
+    <img src="../imagens/banner.jpg" alt="Banner principal da ONG" class="banner-img">
+    <div class="banner-texto">
+      <h2>Transforme vidas com pequenas ações</h2>
+      <button class="btn">Doe Agora</button>
+    </div>
+  </section>
+
+  <!-- ====== Alerts (Feedback) ====== -->
+  <section class="feedback">
+    <div class="alert alert-success">✅ Cadastro realizado com sucesso!</div>
+    <div class="alert alert-warning">⚠️ Lembre-se de completar seu perfil!</div>
+    <div class="alert alert-error">❌ Erro ao enviar formulário.</div>
+  </section>
+
+  <!-- ====== Cards de Projetos ====== -->
+  <section class="projetos">
+    <h2>Nossos Projetos</h2>
+    <div class="grid-cards">
+      <div class="card">
+        <img src="../imagens/projeto1.jpg" alt="Projeto Alimentação" class="img-card">
+        <h3>Projeto Alimentação</h3>
+        <p>Distribuímos cestas básicas para famílias carentes.</p>
+        <span class="badge badge-projeto">Projeto</span>
+        <button class="btn">Saiba Mais</button>
       </div>
-    </section>
 
-    <section class="sobre">
-      <h2>Quem Somos</h2>
-      <p>A ONG Esperança é uma organização sem fins lucrativos que atua desde 2015 em comunidades carentes, promovendo educação, saúde e inclusão social. Nosso objetivo é oferecer oportunidades reais de mudança para famílias em situação de vulnerabilidade.</p>
-      <p>Com o apoio de voluntários e doadores, realizamos projetos que impactam diretamente a vida de milhares de pessoas todos os anos.</p>
-    </section>
+      <div class="card">
+        <img src="../imagens/projeto2.jpg" alt="Projeto Educação" class="img-card">
+        <h3>Projeto Educação</h3>
+        <p>Oferecemos reforço escolar e materiais didáticos.</p>
+        <span class="badge badge-voluntario">Voluntário</span>
+        <button class="btn">Inscreva-se</button>
+      </div>
 
-    <section class="contato">
-      <h2>Contato</h2>
-      <ul>
-        <li><strong>Endereço:</strong> Rua da Solidariedade, 123 – São Paulo/SP</li>
-        <li><strong>E-mail:</strong> contato@ongesperanca.org.br</li>
-        <li><strong>Telefone:</strong> (11) 99999-9999</li>
-      </ul>
-    </section>
-  </main>
+      <div class="card">
+        <img src="../imagens/projeto3.jpg" alt="Campanha de Inverno" class="img-card">
+        <h3>Campanha de Inverno</h3>
+        <p>Arrecadamos roupas e cobertores para quem precisa.</p>
+        <span class="badge badge-doacao">Doação</span>
+        <button class="btn">Participe</button>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 ONG Esperança — Todos os direitos reservados.</p>
+  <!-- ====== Formulário ====== -->
+  <section class="formulario">
+    <h2>Cadastre-se como Voluntário</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="area">Área de Interesse:</label>
+      <select id="area" name="area">
+        <option value="alimentacao">Alimentação</option>
+        <option value="educacao">Educação</option>
+        <option value="saude">Saúde</option>
+      </select>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Por que deseja ser voluntário?"></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- ====== Rodapé ====== -->
+  <footer class="footer">
+    <p>&copy; 2025 ONG Esperança - Todos os direitos reservados.</p>
   </footer>
 
   <script src="../js/script.js"></script>
 </body>
 </html>
+
 

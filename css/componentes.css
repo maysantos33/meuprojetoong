@@ -1,0 +1,41 @@
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--esp-16);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* Menu mobile */
+.menu-hamburguer {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-hamburguer span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--cor-primaria);
+  }
+
+  .menu-hamburguer {
+    display: flex;
+  }
+}

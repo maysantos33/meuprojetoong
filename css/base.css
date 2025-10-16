@@ -1,0 +1,35 @@
+:root {
+  /* 🎨 Paleta de cores */
+  --cor-primaria: #0056b3;
+  --cor-secundaria: #0099ff;
+  --cor-neutra-clara: #f5f5f5;
+  --cor-neutra-media: #cccccc;
+  --cor-neutra-escura: #333333;
+  --cor-sucesso: #4caf50;
+  --cor-alerta: #ff9800;
+  --cor-erro: #f44336;
+
+  /* 🔠 Tipografia */
+  --fonte-principal: 'Poppins', sans-serif;
+  --tamanho-h1: 2.5rem;
+  --tamanho-h2: 2rem;
+  --tamanho-h3: 1.5rem;
+  --tamanho-padrao: 1rem;
+  --tamanho-pequeno: 0.875rem;
+
+  /* 📏 Espaçamento modular */
+  --esp-8: 8px;
+  --esp-16: 16px;
+  --esp-24: 24px;
+  --esp-32: 32px;
+  --esp-48: 48px;
+  --esp-64: 64px;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-neutra-clara);
+  color: var(--cor-neutra-escura);
+  margin: 0;
+  padding: 0;
+}
